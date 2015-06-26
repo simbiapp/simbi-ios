@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Xv-Ps-Tte">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--InitialViewController-->
@@ -16,33 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egH-yA-uhY">
-                                <rect key="frame" x="117" y="114" width="366" height="30"/>
-                                <state key="normal" title="Ask a Question">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TtW-2c-m6r" kind="show" id="tVG-Fs-NpQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-yy-tET">
-                                <rect key="frame" x="117" y="201" width="366" height="30"/>
-                                <state key="normal" title="Your Pet Profile">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xwX-mm-ySU" kind="show" id="dPD-TZ-L0L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rat-ri-t2h">
-                                <rect key="frame" x="117" y="285" width="366" height="30"/>
-                                <state key="normal" title="Search Vet Profiles">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="HPh-Nb-BzL" kind="show" id="swm-LR-tXv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hse-ij-VuV">
                                 <rect key="frame" x="109" y="512" width="382" height="30"/>
                                 <state key="normal" title="Emergency">
@@ -52,8 +26,38 @@
                                     <segue destination="0DM-BH-Wlb" kind="show" id="9Ax-H0-Kwh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFs-OR-Dsw">
-                                <rect key="frame" x="117" y="368" width="366" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egH-yA-uhY">
+                                <rect key="frame" x="196" y="108" width="366" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="SjA-0W-hfT"/>
+                                </constraints>
+                                <state key="normal" title="Ask a Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TtW-2c-m6r" kind="show" id="tVG-Fs-NpQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-yy-tET">
+                                <rect key="frame" x="196" y="195" width="366" height="30"/>
+                                <state key="normal" title="Your Pet Profile">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xwX-mm-ySU" kind="show" id="dPD-TZ-L0L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rat-ri-t2h">
+                                <rect key="frame" x="196" y="279" width="366" height="30"/>
+                                <state key="normal" title="Search Vet Profiles">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HPh-Nb-BzL" kind="show" id="swm-LR-tXv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFs-OR-Dsw">
+                                <rect key="frame" x="196" y="362" width="366" height="30"/>
                                 <state key="normal" title="Find Animal Hospital">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,6 +67,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="egH-yA-uhY" firstAttribute="top" secondItem="yXg-Do-gxf" secondAttribute="bottom" constant="44" id="1m1-hX-Ruk"/>
+                            <constraint firstItem="Rat-ri-t2h" firstAttribute="leading" secondItem="x4P-yy-tET" secondAttribute="leading" id="4dv-9g-dh7"/>
+                            <constraint firstItem="Rat-ri-t2h" firstAttribute="top" secondItem="x4P-yy-tET" secondAttribute="bottom" constant="54" id="AqQ-fD-lZd"/>
+                            <constraint firstItem="x4P-yy-tET" firstAttribute="trailing" secondItem="egH-yA-uhY" secondAttribute="trailing" id="IWx-eT-kbx"/>
+                            <constraint firstItem="x4P-yy-tET" firstAttribute="leading" secondItem="egH-yA-uhY" secondAttribute="leading" id="LC9-ag-guN"/>
+                            <constraint firstItem="PFs-OR-Dsw" firstAttribute="trailing" secondItem="Rat-ri-t2h" secondAttribute="trailing" id="O0V-mR-Xsx"/>
+                            <constraint firstItem="PFs-OR-Dsw" firstAttribute="leading" secondItem="Rat-ri-t2h" secondAttribute="leading" id="W0x-9J-PiI"/>
+                            <constraint firstItem="PFs-OR-Dsw" firstAttribute="top" secondItem="Rat-ri-t2h" secondAttribute="bottom" constant="53" id="bcu-4G-GD4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="egH-yA-uhY" secondAttribute="trailing" constant="22" id="fyZ-TE-FJ9"/>
+                            <constraint firstItem="x4P-yy-tET" firstAttribute="top" secondItem="egH-yA-uhY" secondAttribute="bottom" constant="57" id="tjG-4D-UU3"/>
+                            <constraint firstItem="Rat-ri-t2h" firstAttribute="trailing" secondItem="x4P-yy-tET" secondAttribute="trailing" id="ucg-mB-uac"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0VL-TS-5WZ"/>
                 </viewController>
