@@ -24,7 +24,7 @@ Now that you've installed homebrew, you can use it to install packages like.  In
 brew install git
 ```
 ### 3. Install RubyGems
-RubyGems is a package manager we will use to install cocoapods (which manages the dependancies for our project).  We will install it with git. 
+RubyGems is a package manager we will use to install cocoapods (which manages the dependencies for our project).  We will install it with git. 
 ```
 git clone https://github.com/rubygems/rubygems.git
 cd rubygems
@@ -41,16 +41,16 @@ Navigate to the directory you want to put the project in using `cd`.  Then, clon
 git clone https://github.com/simbiapp/simbi-ios.git
 ```
 You may need to input your GitHub username and password when prompted.
-### 5. Use cocoapods to install required dependancies
+### 5. Use cocoapods to install required dependencies
 ```
 cd simbi-ios
 cd simbi-app
 pod install
 ```
 ### 6. Open the project in Xcode and build!
-Now the project should be setup and install along with all of its dependancies.  Open the workspace file in Xcode using:
+Now the project should be setup and install along with all of its dependencies.  Open the workspace file in Xcode using:
 ```
 open simbi_app.xcworkspace
 ```
 
-Tell us on Slack if you have any issues.  Thanks for helping with the project!
+Tell us on [Slack](https://simbiapp.slack.com/messages/general/) if you have any issues.  Thanks for helping with the project!
