@@ -12,6 +12,7 @@
 		39002C371B3DD03B0040C5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39002C361B3DD03B0040C5B0 /* Images.xcassets */; };
 		39002C3A1B3DD03B0040C5B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39002C381B3DD03B0040C5B0 /* LaunchScreen.xib */; };
 		39002C461B3DD03B0040C5B0 /* simbi_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39002C451B3DD03B0040C5B0 /* simbi_appTests.swift */; };
+		62D535A67872530947F91AF4 /* libPods-simbi_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,10 @@
 		39002C3F1B3DD03B0040C5B0 /* simbi_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simbi_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39002C441B3DD03B0040C5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39002C451B3DD03B0040C5B0 /* simbi_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simbi_appTests.swift; sourceTree = "<group>"; };
+		64E9FDAC1B3E3BF800F5E4EA /* simbi_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simbi_app-Bridging-Header.h"; sourceTree = "<group>"; };
+		99C29CA71A614FFA1C9A09C2 /* Pods-simbi_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simbi_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-simbi_app/Pods-simbi_app.release.xcconfig"; sourceTree = "<group>"; };
+		D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simbi_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D9CBB32E13BD2B7FB7A8B4 /* Pods-simbi_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simbi_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simbi_app/Pods-simbi_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D535A67872530947F91AF4 /* libPods-simbi_app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,8 @@
 				39002C2C1B3DD03B0040C5B0 /* simbi_app */,
 				39002C421B3DD03B0040C5B0 /* simbi_appTests */,
 				39002C2B1B3DD03B0040C5B0 /* Products */,
+				7C4E685EA28D8A1FCC55044B /* Pods */,
+				55769681989461A7EF0FF831 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				39002C2E1B3DD03B0040C5B0 /* Info.plist */,
+				64E9FDAC1B3E3BF800F5E4EA /* simbi_app-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +118,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		55769681989461A7EF0FF831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C4E685EA28D8A1FCC55044B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6D9CBB32E13BD2B7FB7A8B4 /* Pods-simbi_app.debug.xcconfig */,
+				99C29CA71A614FFA1C9A09C2 /* Pods-simbi_app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39002C491B3DD03B0040C5B0 /* Build configuration list for PBXNativeTarget "simbi_app" */;
 			buildPhases = (
+				510B1ED17D8599C393CAE9D6 /* Check Pods Manifest.lock */,
 				39002C261B3DD03B0040C5B0 /* Sources */,
 				39002C271B3DD03B0040C5B0 /* Frameworks */,
 				39002C281B3DD03B0040C5B0 /* Resources */,
+				01D63E93F6080957DEEBC561 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +231,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D63E93F6080957DEEBC561 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simbi_app/Pods-simbi_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		510B1ED17D8599C393CAE9D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39002C261B3DD03B0040C5B0 /* Sources */ = {
@@ -330,21 +391,28 @@
 		};
 		39002C4A1B3DD03B0040C5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D9CBB32E13BD2B7FB7A8B4 /* Pods-simbi_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = simbi_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "simbi_app/simbi_app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		39002C4B1B3DD03B0040C5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C29CA71A614FFA1C9A09C2 /* Pods-simbi_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = simbi_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "simbi_app/simbi_app-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -401,6 +469,7 @@
 				39002C4B1B3DD03B0040C5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39002C4C1B3DD03B0040C5B0 /* Build configuration list for PBXNativeTarget "simbi_appTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +478,7 @@
 				39002C4E1B3DD03B0040C5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
