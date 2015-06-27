@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'simbi_app' do
+
+pod 'AFNetworking', '2.5.4'
+
+end
+
+target 'simbi_appTests' do
+
+end
+
