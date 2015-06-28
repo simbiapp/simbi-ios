@@ -13,6 +13,9 @@
 		39002C3A1B3DD03B0040C5B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39002C381B3DD03B0040C5B0 /* LaunchScreen.xib */; };
 		39002C461B3DD03B0040C5B0 /* simbi_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39002C451B3DD03B0040C5B0 /* simbi_appTests.swift */; };
 		62D535A67872530947F91AF4 /* libPods-simbi_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */; };
+		64E9FDB91B40995200F5E4EA /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9FDB81B40995200F5E4EA /* TestModel.swift */; };
+		64E9FDBB1B40996300F5E4EA /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9FDBA1B40996300F5E4EA /* TestController.swift */; };
+		64E9FDBD1B40997B00F5E4EA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E9FDBC1B40997B00F5E4EA /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		39002C441B3DD03B0040C5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39002C451B3DD03B0040C5B0 /* simbi_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simbi_appTests.swift; sourceTree = "<group>"; };
 		64E9FDAC1B3E3BF800F5E4EA /* simbi_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simbi_app-Bridging-Header.h"; sourceTree = "<group>"; };
+		64E9FDB81B40995200F5E4EA /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		64E9FDBA1B40996300F5E4EA /* TestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		64E9FDBC1B40997B00F5E4EA /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		99C29CA71A614FFA1C9A09C2 /* Pods-simbi_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simbi_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-simbi_app/Pods-simbi_app.release.xcconfig"; sourceTree = "<group>"; };
 		D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-simbi_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D9CBB32E13BD2B7FB7A8B4 /* Pods-simbi_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simbi_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simbi_app/Pods-simbi_app.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 		64E9FDB51B4098DF00F5E4EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64E9FDBC1B40997B00F5E4EA /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 		64E9FDB61B4098EE00F5E4EA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				64E9FDBA1B40996300F5E4EA /* TestController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 		64E9FDB71B4098FB00F5E4EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				64E9FDB81B40995200F5E4EA /* TestModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E9FDBD1B40997B00F5E4EA /* TestView.swift in Sources */,
+				64E9FDBB1B40996300F5E4EA /* TestController.swift in Sources */,
 				39002C301B3DD03B0040C5B0 /* AppDelegate.swift in Sources */,
+				64E9FDB91B40995200F5E4EA /* TestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
