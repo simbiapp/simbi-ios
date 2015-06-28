@@ -83,6 +83,9 @@
 		39002C2C1B3DD03B0040C5B0 /* simbi_app */ = {
 			isa = PBXGroup;
 			children = (
+				64E9FDB71B4098FB00F5E4EA /* Models */,
+				64E9FDB61B4098EE00F5E4EA /* ViewControllers */,
+				64E9FDB51B4098DF00F5E4EA /* Views */,
 				39002C2F1B3DD03B0040C5B0 /* AppDelegate.swift */,
 				39002C331B3DD03B0040C5B0 /* Main.storyboard */,
 				39002C361B3DD03B0040C5B0 /* Images.xcassets */,
@@ -124,6 +127,27 @@
 				D20A8962D7BC3183BB22D7F3 /* libPods-simbi_app.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64E9FDB51B4098DF00F5E4EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64E9FDB61B4098EE00F5E4EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64E9FDB71B4098FB00F5E4EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7C4E685EA28D8A1FCC55044B /* Pods */ = {
