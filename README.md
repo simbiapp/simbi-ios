@@ -1,2 +1,2 @@
 # simbi-ios
-Simbi for iOS.
+Simbi for iOS
